@@ -1,7 +1,14 @@
 <?php 
+	
+	//Função para validar as entradas do formulario
+
 	session_start();
 	
+	declare('strict_type=1');
+
 	function ValidarEntradas($nome,$idade){
+
+		//Condições para validar as entradas
 
 		if(empty($nome)){
 			$_SESSION['mensagem-de-erro'] = "O campo Nome não pode estar vazio";

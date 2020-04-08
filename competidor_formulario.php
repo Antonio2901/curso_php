@@ -1,3 +1,5 @@
+<!--Codigo do formulario e para mostrar erros na entrada de dados -->
+
 <?php 
 	session_start();
 ?>
@@ -12,6 +14,9 @@
 	</head>
 	<body>
 <?php 
+
+	//Condição para avaliar se existe mensagens de erros ou de sucesso; 
+
 	$erro = isset($_SESSION['mensagem-de-erro']) ? $_SESSION['mensagem-de-erro'] : "";
 	$sucesso = isset($_SESSION['mensagem-de-sucesso']) ? $_SESSION['mensagem-de-sucesso'] : "";
 	if(!empty($erro)){
@@ -22,6 +27,8 @@
 		session_unset();
 	}
 ?>
+		<!--Formulario para inscrição-->
+		
 		<h1>FORMULARIO PARA INSCRIÇÃO DE COMPETIDORES</h1>
 		<form action="dados.php" method="post">
 			<input type="text" name="nome" placeholder="Seu Nome"><br>

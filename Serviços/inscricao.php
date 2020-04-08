@@ -1,5 +1,7 @@
 <?php 
 	
+	//Função para separar as categorias dos competidores
+
 	session_start();
 
 
@@ -9,6 +11,8 @@
 		$categoria[] = "Infantil";
 		$categoria[] = "Adolescente";
 		$categoria[] = "Adulto";
+
+		//Condicinais para indicar a categoria do participante
 
 		if($idade >= 6 AND $idade <= 12){
 			for($i =0 ; $i <count($categoria); $i++){
