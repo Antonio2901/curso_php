@@ -1,2 +1,2 @@
 <?php  
-	require 'competidor_simples.php';
+	require 'competidor_formulario.php';
