@@ -24,8 +24,8 @@
 ?>
 		<h1>FORMULARIO PARA INSCRIÇÃO DE COMPETIDORES</h1>
 		<form action="dados.php" method="post">
-			<input type="text" name="nome" placeholder="Seu Nome">
-			<input type="text" name="idade" placeholder="Sua Idade">
+			<input type="text" name="nome" placeholder="Seu Nome"><br>
+			<input type="text" name="idade" placeholder="Sua Idade"><br>
 			<button type="submit" name="btn-enviar">Enviar</button>
 		</form>
 	</body>
